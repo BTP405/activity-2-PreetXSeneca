@@ -23,6 +23,7 @@ def getPrimeNumbers(n):
             pNumbers.append(i);
     return pNumbers;        
 
+
 # when this file will be imported somewhere then below code will not be executed!
 # Here, __name__ will be __main__ but when we import it somewhere __name__ will be the file name like q1 here
 if __name__ == "__main__":
