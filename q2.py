@@ -11,11 +11,13 @@ def graphSnowfall(t):
         for line in file:
             cms = int(line)
             # now to count the number of occurances
+            
             for index, r in enumerate(ranges):
                 # getting each element from ranges with index then spliting them from '-' and converting into 
                 # int and then checking that read number is between them or not if it is then at that index
                 # we increase the count.
                 lowerLimit, upperLimit = map(int, r.split('-'))
+                
                 if lowerLimit <= cms <= upperLimit:
                     # if it is in that range will increase the count for that index
                     # ALo, we will not move forward and break the loop
